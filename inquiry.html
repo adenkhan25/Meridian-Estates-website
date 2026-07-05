@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inquire — Meridian Estates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav solid">
+  <a class="brand" href="index.html">
+    <span class="brand-mark">
+      <svg viewBox="0 0 30 30"><rect x="2" y="2" width="26" height="26" fill="none" stroke="#A9834E" stroke-width="1.2"/><line x1="2" y1="15" x2="28" y2="15" stroke="#A9834E" stroke-width="1"/><line x1="15" y1="2" x2="15" y2="28" stroke="#A9834E" stroke-width="1"/><circle cx="15" cy="15" r="5" fill="none" stroke="#A9834E" stroke-width="1"/></svg>
+    </span>
+    <span class="brand-name">Meridian Estates</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="listings.html">Listings</a></li>
+    <li><a href="tour.html">3D Tour</a></li>
+    <li><a href="floorplan.html">Floor Plans</a></li>
+    <li><a href="inquiry.html" class="active">Inquire</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <svg width="26" height="18" viewBox="0 0 26 18"><rect width="26" height="2" fill="currentColor"/><rect y="8" width="26" height="2" fill="currentColor"/><rect y="16" width="26" height="2" fill="currentColor"/></svg>
+  </button>
+</nav>
+
+<section class="inquiry-wrap">
+  <div class="wrap" style="max-width:760px;">
+    <div class="section-head">
+      <p class="eyebrow">Book a Walkthrough</p>
+      <h2>Tell us which home you'd like to see, live or in 3D</h2>
+    </div>
+
+    <form id="inquiry-form" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone">
+        </div>
+        <div class="field">
+          <label for="property">Property</label>
+          <select id="property" required>
+            <option value="">Select a listing</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="tour-type">Preferred format</label>
+          <select id="tour-type">
+            <option value="in-person">In-person walkthrough</option>
+            <option value="3d">3D remote tour</option>
+            <option value="either">Either works</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="date">Preferred date</label>
+          <input type="date" id="date">
+        </div>
+        <div class="field full">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Anything specific you'd like the agent to know?"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn mt-40">Send Inquiry</button>
+      <div class="form-status" id="form-status"></div>
+    </form>
+  </div>
+</section>
+
+<footer style="margin-top:80px;">
+  <div class="wrap">
+    <div class="foot-bottom">
+      <span>&copy; <span id="year"></span> Meridian Estates</span>
+      <span>Mtech-Web26003</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/inquiry.js"></script>
+</body>
+</html>
