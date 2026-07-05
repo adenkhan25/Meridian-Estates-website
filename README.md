@@ -44,8 +44,7 @@ python -m http.server 8000
 ```
 
 Then visit `http://localhost:8000`.
-website link:
-https://6a4a6824f4cdc5dff2119b64--chimerical-fudge-3e99ad.netlify.app/
+
 
 ## Notes for development
 
